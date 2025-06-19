@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .title }}</title>
+  <link rel="stylesheet" href="/static/dashboard-style.css">
+</head>
+<body>
+  <h2>Selamat Datang, {{ .nama }}</h2>
+  <p>Email: {{ .email }}</p>
+  <p>Role Saat Ini: {{ .role }}</p>
+  <label>Ganti Role:</label>
+  <select>
+    <option value="Admin">Admin</option>
+    <option value="User">User</option>
+  </select>
+</body>
+</html>

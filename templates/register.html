@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .title }}</title>
+  <link rel="stylesheet" href="/static/register-style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form Register</h2>
+    <form method="POST" action="/register">
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama_lengkap" required>
+
+      <label>Alamat Lengkap:</label>
+      <input type="text" name="alamat" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Password:</label>
+      <input type="password" name="password" required>
+
+      <label>Role:</label>
+      <select name="role">
+        <option value="Admin">Admin</option>
+        <option value="User">User</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+    <p>Sudah punya akun? <a href="/login">Login di sini</a></p>
+  </div>
+</body>
+</html>

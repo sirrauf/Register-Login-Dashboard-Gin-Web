@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .title }}</title>
+  <link rel="stylesheet" href="/static/login-style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form Login</h2>
+    <form method="POST" action="/login">
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br>
+      <label>Password:</label><br>
+      <input type="password" name="password" required><br><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
